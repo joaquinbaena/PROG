@@ -25,8 +25,8 @@ public class MenuSimple {
   }
 
   /**
-   * 
-   * @param n
+   * nos servirá para seleccionar una opción del menú
+   * @param n opción del menú
    * @return
    */
 public int seleccionar() {
@@ -39,7 +39,7 @@ public int seleccionar() {
   Scanner s = new Scanner(System.in);
   System.out.print("Selecciona una opción: ");
   int n = s.nextInt();
-  s.close();
+  s.nextLine();
   return n;
 }
 
